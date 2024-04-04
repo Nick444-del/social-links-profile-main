@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    /* Primary */
+    --green: hsl(75, 94%, 57%);
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%)
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',  sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Off-Black);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .container{
+    background-color: var(--Dark-Grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.main .container .profile img{
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.main .container .profile .location{
+    color: var(--green);
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.main .container .profile .title{
+    margin-bottom: 20px;
+    color: var(--White);
+}
+
+.main .container .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main .container li{
+    margin-bottom: 10px;
+    color: var(--White);
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--Grey);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 375px){
+    .container{
+        width: 90vw;
+        height: 90vh;
+    }
+}
